@@ -1,0 +1,41 @@
+.navbar{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        h2{
+            font-family: VariableFont_wght;
+            color: #fff;
+            font-size: 26px;
+            font-weight: 400;
+        }
+    }
+    &__collection{
+        display: flex;
+        gap: 21px;
+    }
+    &__item{
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+    span{
+        font-family: Oxygen-Ligh;
+    }    
+    }
+    &__menu{
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+   .navbar{
+      &__item{
+         display: none;
+      }
+      &__menu{
+         display: block;
+         color: #fff;
+     }
+   }
+}
